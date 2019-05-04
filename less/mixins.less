@@ -1,15 +1,22 @@
 // Mixins Here
-.btn {
+.sharedBtn(@width) {
     background-color: #22283A;
     color: white;
     padding: 10px;
-    width: 40%;
+    width: @width;
     border-radius:5px;
     font-size: 20px;
     text-align: center;
 }
 
-@phone (max-width: 500px) { 
+.btn {
+   .sharedBtn(150px);
+}
+
+@media (max-width: 500px) { 
+    body {
+        max-width: @phone;
+    }
     .headsup {
         width: 60%;
     }
@@ -17,9 +24,8 @@
         width: 60%;
     }
 
+    .btn {
+        .sharedBtn(350px);
+    }
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
