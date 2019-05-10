@@ -76,6 +76,10 @@
 
       .btn {
       }
+        @media @phone {
+    
+            width: 90%;
+        }
     }
 
     .walk-img {
@@ -83,6 +87,8 @@
       margin-left: 4%;
         @media @phone {
             width: 90%;
+            margin-left: inherit;
+            height: 100%;
         }
       
       img {
@@ -93,6 +99,7 @@
     }
       @media @phone {
           flex-direction: column-reverse;
+          padding: 10px;
       }
   }
 }// home
