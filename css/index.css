@@ -7,16 +7,6 @@
   font-size: 20px;
   text-align: center;
 }
-@media (max-width: 500px) {
-  body {
-    max-width: 500px;
-  }
-  .headsup {
-    width: 60%;
-  }
-  .container {
-    width: 60%;
-  }
   .btn {
     background-color: #22283A;
     color: white;
